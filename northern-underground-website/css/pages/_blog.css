@@ -1,0 +1,13 @@
+/* css/pages/_blog.css */
+
+/* Specific styles for the blog page sections */
+
+#blog-hero {
+    background-image: url('https://via.placeholder.com/1500x400/66BB6A/FFFFFF?text=Our+Insights');
+}
+
+#blog-main h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--brand-green);
+}

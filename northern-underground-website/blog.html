@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-translate-key="pageTitleBlog">Blog - Northern Underground</title>
+  <!-- Corrected CSS path -->
+  <link rel="stylesheet" href="/northern-underground-website/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-page-title-key="pageTitleBlog" class="page-blog">
+  <div id="header-placeholder"></div>
+
+  <main class="page-main">
+    <section id="blog-hero" class="hero-section small-hero" style="background-image: url('https://placehold.co/1500x400/66BB6A/FFFFFF?text=Our+Insights');">
+      <div class="hero-content">
+        <h1 data-translate-key="blogHeroTitle">Insights from Northern Underground</h1>
+        <p data-translate-key="blogHeroSubtitle">Stay connected with our latest articles, tips, and company news.</p>
+      </div>
+    </section>
+
+    <section id="blog-main" class="section-container">
+      <div class="blog-filters">
+        <input type="text" id="blog-search-input" placeholder="Search blog posts..." data-translate-key="blogSearchPlaceholder" />
+        <div class="category-tags">
+          <span class="category-tag active" data-category="all" data-translate-key="blogCategoryAll">All</span>
+          <span class="category-tag" data-category="technology" data-translate-key="blogCategoryTech">Technology</span>
+          <span class="category-tag" data-category="relationships" data-translate-key="blogCategoryRelationships">Relationships</span>
+          <span class="category-tag" data-category="tips" data-translate-key="blogCategoryTips">Tips & Tricks</span>
+          <span class="category-tag" data-category="company" data-translate-key="blogCategoryCompany">Company News</span>
+        </div>
+      </div>
+      <div class="blog-grid" id="blog-posts-container">
+        </div>
+    </section>
+
+    <section id="sample-cta" class="call-to-action-section">
+      <h2 data-translate-key="ctaSampleTitle">Ready to Experience the Difference?</h2>
+      <p data-translate-key="ctaSampleSubtitle">Order your FREE sample device today and start creating shared memories.</p>
+      <button id="open-modal-btn" class="btn-primary" data-translate-key="ctaSampleButton">Claim Your Free Sample!</button>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <div id="sample-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" data-translate-key="modalCloseButton">&times;</span>
+      <h2 data-translate-key="modalTitle">Order Your Free Sample</h2>
+      <p data-translate-key="modalSubtitle">Fill out the form below to receive a free sample of our groundbreaking note-taking device.</p>
+      <form id="sample-form">
+        <div class="form-group">
+          <label for="sample-name" data-translate-key="modalLabelName">Name:</label>
+          <input type="text" id="sample-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="sample-email" data-translate-key="modalLabelEmail">Email:</label>
+          <input type="email" id="sample-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="sample-address" data-translate-key="modalLabelAddress">Shipping Address:</label>
+          <textarea id="sample-address" name="address" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" data-translate-key="modalSubmitButton">Submit Order</button>
+        <div id="sample-form-message" class="form-message"></div>
+      </form>
+    </div>
+  </div>
+
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3 id="cartTitle" data-translate-key="cartTitle">Your Cart</h3>
+      <button id="closeCart" class="close-cart-btn">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="cart-empty-message" data-translate-key="cartEmptyMessage">Your cart is empty.</p>
+    </div>
+    <div class="cart-summary">
+      <p class="cart-total" data-translate-key="cartTotal">Total: <span id="cartTotalPrice">$0.00</span></p>
+      <button class="btn-primary checkout-btn" data-translate-key="checkoutButton">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Corrected JavaScript paths -->
+  <script src="/northern-underground-website/js/domLoader.js"></script>
+  <script type="module" src="/northern-underground-website/js/main.js"></script>
+</body>
+</html>

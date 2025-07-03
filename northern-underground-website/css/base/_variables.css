@@ -1,0 +1,56 @@
+/* css/base/_variables.css */
+
+:root {
+    /* Light Mode Default Variables */
+    --brand-green: #4CAF50; /* Primary brand color */
+    --brand-green-dark: #388E3C; /* Darker shade for hover */
+    --text-color-dark: #333;
+    --text-color-light: #666;
+    --bg-light: #f8f8f8;
+    --bg-dark: #222;
+    --white: #fff;
+    --border-color: #ddd;
+    --card-bg: var(--white); /* Background for cards/content blocks */
+    --form-bg: var(--white); /* Background for forms */
+    --cart-bg: var(--white); /* Background for cart sidebar */
+    --lang-button-bg: #eee; /* Language toggle button background */
+    --lang-button-text: #555; /* Language toggle button text */
+    --lang-button-active-bg: var(--brand-green); /* Active language button background */
+    --lang-button-active-text: var(--white); /* Active language button text */
+    --blog-search-bg: var(--white); /* Blog search input background */
+
+    /* Fonts */
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
+    --spacing-xl: 80px;
+
+    /* Border Radius */
+    --border-radius: 8px;
+
+    /* Box Shadow */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Mode styles */
+body.dark-mode {
+    --text-color-dark: #E0E0E0;
+    --text-color-light: #B0B0B0;
+    --bg-light: #333;
+    --bg-dark: #1a1a1a;
+    --white: #222; /* Adjust white for dark mode */
+    --border-color: #555;
+    --card-bg: #2d2d2d;
+    --form-bg: #2d2d2d;
+    --cart-bg: #2d2d2d;
+    --lang-button-bg: #444;
+    --lang-button-text: #E0E0E0;
+    --lang-button-active-bg: var(--brand-green);
+    --lang-button-active-text: var(--white);
+    --blog-search-bg: #2d2d2d;
+}

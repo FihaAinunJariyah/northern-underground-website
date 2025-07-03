@@ -1,0 +1,29 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Base Styles */
+@import 'base/_variables.css';
+@import 'base/_reset.css';
+
+/* Layout Styles */
+@import 'layout/_main.css';
+@import 'layout/_header.css';
+@import 'layout/_footer.css';
+
+/* Component Styles */
+@import 'components/_buttons.css';
+@import 'components/_forms.css';
+@import 'components/_modals.css';
+@import 'components/_cards.css';
+@import 'components/_cart.css';
+@import 'components/_product-gallery.css';
+@import 'components/_blog-filters.css';
+
+/* Page Specific Styles */
+@import 'pages/_home.css';
+@import 'pages/_about.css';
+@import 'pages/_shop.css';
+@import 'pages/_blog.css';
+
+/* Responsive Styles - should be imported last to override as needed */
+@import '_responsive.css';

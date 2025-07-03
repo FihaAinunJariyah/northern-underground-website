@@ -1,0 +1,75 @@
+/* css/pages/_home.css */
+
+/* Specific styles for the home page sections */
+
+#hero {
+    /* Background image set directly in HTML for simplicity or via JS */
+    background-image: url('https://via.placeholder.com/1500x600/4CAF50/FFFFFF?text=Unlock+Your+Creativity');
+}
+
+#product-overview {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+#product-overview .product-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+#product-overview .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+#product-overview .product-description {
+    flex: 2;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+#product-overview .product-description h2 {
+    color: var(--brand-green);
+    margin-bottom: 20px;
+}
+
+#product-overview .product-description p {
+    margin-bottom: 20px;
+}
+
+#product-overview .product-description ul {
+    list-style: none; /* Remove default list style */
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#product-overview .product-description ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--text-color-dark);
+}
+
+#product-overview .product-description ul li::before {
+    content: '✓'; /* Checkmark icon */
+    color: var(--brand-green);
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+#values-section h2, #testimonials-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--brand-green);
+}
+
+#contact-us h2, #contact-us p {
+    text-align: center;
+}

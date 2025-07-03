@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-translate-key="pageTitleAbout">About Us - Northern Underground</title>
+  <!-- Corrected CSS path -->
+  <link rel="stylesheet" href="/northern-underground-website/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-page-title-key="pageTitleAbout" class="page-about">
+  <div id="header-placeholder"></div>
+
+  <main class="page-main">
+    <section id="about-hero" class="hero-section small-hero" style="background-image: url('https://placehold.co/1500x400/333333/FFFFFF?text=Our+Story');">
+      <div class="hero-content">
+        <h1 data-translate-key="aboutHeroTitle">Innovation Meets Intuition</h1>
+        <p data-translate-key="aboutHeroSubtitle">Learn more about our journey to revolutionize note-taking for couples.</p>
+      </div>
+    </section>
+
+    <section id="mission-vision" class="section-container">
+      <h2 data-translate-key="missionVisionTitle">Our Mission & Vision</h2>
+      <div class="mission-vision-content">
+        <div class="mission">
+          <h3 data-translate-key="missionTitle">Mission</h3>
+          <p data-translate-key="missionText">To empower couples with innovative technology that deepens connection and cherishes shared moments through intuitive note-taking solutions.</p>
+        </div>
+        <div class="vision">
+          <h3 data-translate-key="visionTitle">Vision</h3>
+          <p data-translate-key="visionText">To be the global leader in shared digital memory solutions, enabling every couple to capture, relive, and cherish their unique journey together.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-team" class="section-container">
+      <h2 data-translate-key="ourTeamTitle">Meet Our Dedicated Team</h2>
+      <div class="team-grid">
+        <div class="team-member-card">
+          <img src="https://placehold.co/150x150/4CAF50/FFFFFF?text=Jane+Doe" alt="Jane Doe" class="team-member-photo" />
+          <h3 data-translate-key="teamMember1Name">Jane Doe</h3>
+          <p data-translate-key="teamMember1Role">Co-Founder & CEO</p>
+          <p data-translate-key="teamMember1Desc">Visionary leader driving innovation and strategy.</p>
+        </div>
+        <div class="team-member-card">
+          <img src="https://placehold.co/150x150/333333/FFFFFF?text=John+Smith" alt="John Smith" class="team-member-photo" />
+          <h3 data-translate-key="teamMember2Name">John Smith</h3>
+          <p data-translate-key="teamMember2Role">Chief Technology Officer</p>
+          <p data-translate-key="teamMember2Desc">Architect of our groundbreaking note-taking technology.</p>
+        </div>
+        <div class="team-member-card">
+          <img src="https://placehold.co/150x150/66BB6A/FFFFFF?text=Emily+Brown" alt="Emily Brown" class="team-member-photo" />
+          <h3 data-translate-key="teamMember3Name">Emily Brown</h3>
+          <p data-translate-key="teamMember3Role">Head of Product Design</p>
+          <p data-translate-key="teamMember3Desc">Ensuring intuitive and beautiful user experiences.</p>
+        </div>
+        <div class="team-member-card">
+          <img src="https://placehold.co/150x150/555555/FFFFFF?text=Michael+Chen" alt="Michael Chen" class="team-member-photo" />
+          <h3 data-translate-key="teamMember4Name">Michael Chen</h3>
+          <p data-translate-key="teamMember4Role">Marketing Director</p>
+          <p data-translate-key="teamMember4Desc">Bringing our story and products to the world.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <div id="sample-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" data-translate-key="modalCloseButton">&times;</span>
+      <h2 data-translate-key="modalTitle">Order Your Free Sample</h2>
+      <p data-translate-key="modalSubtitle">Fill out the form below to receive a free sample of our groundbreaking note-taking device.</p>
+      <form id="sample-form">
+        <div class="form-group">
+          <label for="sample-name" data-translate-key="modalLabelName">Name:</label>
+          <input type="text" id="sample-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="sample-email" data-translate-key="modalLabelEmail">Email:</label>
+          <input type="email" id="sample-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="sample-address" data-translate-key="modalLabelAddress">Shipping Address:</label>
+          <textarea id="sample-address" name="address" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" data-translate-key="modalSubmitButton">Submit Order</button>
+        <div id="sample-form-message" class="form-message"></div>
+      </form>
+    </div>
+  </div>
+
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3 id="cartTitle" data-translate-key="cartTitle">Your Cart</h3>
+      <button id="closeCart" class="close-cart-btn">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="cart-empty-message" data-translate-key="cartEmptyMessage">Your cart is empty.</p>
+    </div>
+    <div class="cart-summary">
+      <p class="cart-total" data-translate-key="cartTotal">Total: <span id="cartTotalPrice">$0.00</span></p>
+      <button class="btn-primary checkout-btn" data-translate-key="checkoutButton">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Corrected JavaScript paths -->
+  <script src="/northern-underground-website/js/domLoader.js"></script>
+  <script type="module" src="/northern-underground-website/js/main.js"></script>
+</body>
+</html>

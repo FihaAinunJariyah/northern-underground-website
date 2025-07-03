@@ -1,0 +1,39 @@
+/* css/pages/_about.css */
+
+/* Specific styles for the about page sections */
+
+#about-hero {
+    background-image: url('https://via.placeholder.com/1500x400/333333/FFFFFF?text=Our+Story');
+}
+
+.mission-vision-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.mission, .vision {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--bg-light);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.3s ease;
+}
+
+.mission h3, .vision h3 {
+    color: var(--brand-green-dark);
+    margin-bottom: 15px;
+}
+
+.mission p, .vision p {
+    color: var(--text-color-light);
+}
+
+#our-team h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--brand-green);
+}

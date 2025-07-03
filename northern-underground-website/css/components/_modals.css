@@ -1,0 +1,60 @@
+/* css/components/_modals.css */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: var(--card-bg);
+    margin: auto;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    width: 80%; /* Could be max-width for better responsiveness */
+    max-width: 500px;
+    animation: fadeIn 0.3s forwards;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Styles specific to modal content for better display */
+.modal-content h2 {
+    color: var(--brand-green);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.modal-content .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+}
